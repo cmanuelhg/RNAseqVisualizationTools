@@ -75,13 +75,11 @@ RUN rm rscript.R
 # test if R package are correctly installed
 RUN R -e "library(devtools); \
  library(ggplot2); \
- library(plyr); \
- library(RUnit); \
- library(Matrix); \
- library(doParallel); \
- library(foreach); \
- library(assertthat); \
- library(rjson);"
+ library(dplyr); \
+ library(RCircos); \
+ library(RSkittleBrewer); \
+ library(genefilter); \
+ library(ballgown); \
 
 WORKDIR $HOME
 
